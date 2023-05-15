@@ -34,5 +34,23 @@ const server = http.createServer((req,res)=>{
             res.end();
           });
     } 
+    if(req.method === 'POST' && req.url === '/contact'){
+        var data=[]
+        req.on('data',(chunks)=>{
+            data.push(chunks);
+        }); 
+        req.on('end',()=>{
+            console.log(data)
+            data=data.toString().split(/[=&+]/)
+            console.log(data)
+            fs.writeFile('data.txt',"Name= "+data[1]+" "+data[2]+" Email= "+data[4],()=>{
+                console.log('data written successfully!')
+            });
+            res.statusCode=200;
+            res.end('Form data received');
+            // res.end(data);
+        })
+    }
 })
 server.listen(3000)
+ 
