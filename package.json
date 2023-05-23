@@ -1,12 +1,20 @@
 {
+  "name": "task_manager_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon httpmodule/app.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
-  "dependencies": {
-    "axios": "^1.4.0",
-    "fs": "^0.0.1-security"
-  },
+  "author": "Dharshini T",
+  "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
   }
 }
