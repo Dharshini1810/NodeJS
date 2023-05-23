@@ -1,0 +1,3 @@
+do coding
+learn C
+learn java

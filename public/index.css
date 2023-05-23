@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+    background-color: #fddde6;
+    color: #e11584;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input{
+    font-size: 30px;
+    border-color: #e11584;
+}
+button{
+    margin-top: 20px;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+}
